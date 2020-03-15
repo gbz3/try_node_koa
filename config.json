@@ -1,5 +1,16 @@
 {
-  "user": "User",
-  "staff": "Staff",
-  "admin": "Admin"
+  "users": [
+    {
+      "username": "user",
+      "password": "user"
+    },
+    {
+      "username": "staff",
+      "password": "staff"
+    },
+    {
+      "username": "admin",
+      "password": "admin"
+    }
+  ]
 }
