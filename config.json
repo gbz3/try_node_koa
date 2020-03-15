@@ -1,1 +1,5 @@
-{ "hoge": "fuga" }
+{
+  "user": "User",
+  "staff": "Staff",
+  "admin": "Admin"
+}

@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = function() {
+module.exports = function(config) {
   const Router = require('@koa/router');
   const router = new Router();
 
@@ -8,8 +8,14 @@ module.exports = function() {
     .get('/', (ctx, next) => {
         ctx.body = 'This is root.'
     })
-    .get('/sub', (ctx, next) => {
-        ctx.body = 'This is sub-dir.'
+    .get('/user', (ctx, next) => {
+        ctx.body = `This is ${config.user}.`
+    })
+    .get('/staff', (ctx, next) => {
+        ctx.body = `This is ${config.staff}.`
+    })
+    .get('/admin', (ctx, next) => {
+        ctx.body = `This is ${config.admin}.`
     })
 
   return router.routes();
