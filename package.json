@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/gbz3/try_node_koa#readme",
   "dependencies": {
+    "@koa/router": "^8.0.8",
     "koa": "^2.11.0"
   }
 }
